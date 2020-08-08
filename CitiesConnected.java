@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class areCitiesConnected {
+public class CitiesConnected {
 
     public static Graph createGraph(Scanner scanner) {
         Graph graph = new Graph();

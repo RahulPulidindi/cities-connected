@@ -19,7 +19,7 @@ public class Graph {
         boolean found2 = false;
 
         for (Node n : adjMap.keySet()) {
-            if (city1.getName().equals(n.getName())) {
+            if (city1.getName().equals(n.getName()) && !found1) {
                 adjMap.get(n).add(city2);
                 found1 = true;
             }
@@ -31,7 +31,7 @@ public class Graph {
         }
 
         for (Node n : adjMap.keySet()) {
-            if (city2.getName().equals(n.getName())) {
+            if (city2.getName().equals(n.getName()) && !found2) {
                 adjMap.get(n).add(city1);
                 found2 = true;
             }
